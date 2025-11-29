@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+	themes: all;
+}
+
+@layer utilities {
+	.bannerBackground {
+		background-image: url("./assets/images/BannerImage.jpg");
+	}
+}
+
+.custom-table-header {
+	@apply grid grid-cols-4 text-base font-semibold text-center rounded-t-lg md:text-xl bg-primary text-primary-content;
+}
+
+.custom-header-row {
+	@apply p-2 border-r-2 border-secondary-content text-center;
+}
+
+.custom-table-row {
+	@apply grid grid-cols-4 p-2 text-center border-b cursor-pointer hover:bg-base-200;
+}
+
+.custom-table {
+	@apply container grid grid-flow-row px-4 mx-auto my-8;
+}
+
+.custom-coin-info-grid {
+	@apply grid grid-rows-2 md:grid-cols-[1fr_2fr] container mx-auto my-12 items-start justify-items-center;
+}
+
+.custom-coin-info-section-1 {
+	@apply flex flex-col items-center justify-center gap-6 px-6 md:border-r;
+}
+
+.custom-about-coin-header {
+	@apply text-xl font-semibold text-center underline underline-offset-2;
+}
